@@ -1,0 +1,13 @@
+@relation SMARTHOME
+
+@attribute LED_id {ByPresence, ByIlumination}
+@attribute timestamp DATE "yyyy-MM-dd HH:mm:ss" 
+@attribute luminosity numeric % 0 - 100
+@attribute sensorEnabled {TRUE, FALSE}
+@attribute action {ON, OFF}
+%action is related to the context element of a feature turn on by presence or lack of luminolity
+% or Off otherwise
+
+@data
+ByPresence,"2016-05-20 05:30:30",55,TRUE,?
+ByIlumination,"2016-05-20 05:30:30",55,TRUE,?

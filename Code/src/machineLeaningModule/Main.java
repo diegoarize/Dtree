@@ -25,7 +25,7 @@ public class Main {
 				System.out.println("===================");
 				System.out.println("Actual Class, DTree Predicted");
 				
-				DataSets.test = ArffHandler.readArff("weather.numeric-test2.arff");	
+				DataSets.test = ArffHandler.readArff("DTreeTest.arff");	
 				DataSets.test.setClassIndex(DataSets.test.numAttributes()-1);
 				
 				int numberOfInstances = DataSets.test.numInstances();

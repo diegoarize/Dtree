@@ -10,10 +10,10 @@ public class DataSets {
 	public static Instances training, test;
 	
 	public DataSets() throws Exception, IOException {
-		training = ArffHandler.readArff("weather.numeric.arff");
+		training = ArffHandler.readArff("DTreeTraining.arff");
 		training.setClassIndex(training.numAttributes() - 1);
 		
-		test = ArffHandler.readArff("weather.numeric-test.arff");
+		test = ArffHandler.readArff("DTreeTest.arff");
 		test.setClassIndex(test.numAttributes() - 1);
 		
 	}
